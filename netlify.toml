@@ -2,6 +2,8 @@
   command = "ng build && ng run angular-serverless:serverless:production"
   functions = "netlify/functions"
   publish = "dist/angular-serverless/browser"
+  functions = "netlify/functions"
+
 
 [[plugins]]
   package = "@netlify/plugin-angular-universal"
