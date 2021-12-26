@@ -1,0 +1,7 @@
+# ./netlify.toml
+[build]
+  command = "ng build && ng run {angular-serverless}:serverless:production"
+  publish = "dist/{angular-serverless}/browser"
+
+[[plugins]]
+  package = "@netlify/plugin-angular-universal"
