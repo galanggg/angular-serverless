@@ -5,6 +5,6 @@ exports.handler = async (event, context) => {
 
   return {
     statusCode: 200,
-    body: "This is working yesss!",
+    body: `${JSON.stringify(event.queryStringParameters)}`,
   };
 };
