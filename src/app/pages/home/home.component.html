@@ -1,1 +1,4 @@
-<p>{{ dataOrg | json }}</p>
+<app-organization-list
+  *ngFor="let organization of dataOrg"
+  [organization]="organization"
+></app-organization-list>

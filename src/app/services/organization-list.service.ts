@@ -9,8 +9,8 @@ import { Organization } from '../models/Organization';
 export class OrganizationListService {
   constructor(private http: HttpClient) {}
 
-  getOrganizationList(): Observable<Organization[]> {
-    return this.http.get<Organization[]>('/.netlify/functions/getOrgs', {
+  getOrganizationList(): Observable<any[]> {
+    return this.http.get<any[]>('/.netlify/functions/getOrgs', {
       headers: { 'Content-type': 'application/json' },
     });
   }

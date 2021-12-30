@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  organizationList!: Observable<Organization[]>;
+  // organizationList!: Observable<Organization[]>;
   dataOrg!: any;
   constructor(private organizationListService: OrganizationListService) {}
 
