@@ -10,8 +10,15 @@
       {{ organization.description }}
     </p>
   </mat-card-content>
+  <mat-card-content>
+    <p>
+      {{ organization.donationAmount | currency }}
+    </p>
+  </mat-card-content>
   <mat-card-actions>
-    <button mat-button>LIKE</button>
+    <button mat-button (click)="triggerCreateCheckout(organization)">
+      DONATE
+    </button>
     <button mat-button>SHARE</button>
   </mat-card-actions>
 </mat-card>
